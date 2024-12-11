@@ -59,7 +59,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: Vishesh Garg
-    subtitle: "This is subtitle"
+    subtitle: Hi, I am a developer, who is learning something new everyday :)
     imageUrl: "img/profile.jpg"
     imageWidth: 120
     imageHeight: 120
@@ -69,6 +69,8 @@ params:
         url: posts
       - name: Tags
         url: tags
+      - name: Resume
+        url: https://drive.google.com/file/d/1lqEr0Qaeioo61tH6MhocO5DbjW3jkUsX/view?usp=sharing
 
   # home-info mode
   homeInfoParams:
@@ -78,10 +80,10 @@ params:
   socialIcons:
     - name: x
       url: "https://x.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+    # - name: stackoverflow
+    #   url: "https://stackoverflow.com"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/illucious"
 
   analytics:
     google:
@@ -114,18 +116,34 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
+    - identifier: blog
+      name: Blog
+      url: /blog/
       weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
+    - identifier: updates
+      name: Updates
+      url: /updates/
       weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
+    - identifier: projects
+      name: Projects
+      url: /projects/
       weight: 30
+    - identifier: experience
+      name: Experience
+      url: /experience/
+      weight: 40
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 50
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 60
+    # - identifier: example
+    #   name: example.org
+    #   url: https://example.org
+    #   weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
